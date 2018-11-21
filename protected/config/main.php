@@ -16,6 +16,10 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+		'application.extensions.MongoYii.*',
+		'application.extensions.MongoYii.validators.*',
+		'application.extensions.MongoYii.behaviors.*',
+		'application.extensions.MongoYii.util.*'
 	),
 
 	'modules'=>array(
@@ -52,6 +56,12 @@ return array(
 
 		// database settings are configured in database.php
 		'db'=>require(dirname(__FILE__).'/database.php'),
+
+		'mongodb' => array(
+			'class' => 'EMongoClient',
+			'server' => 'mongodb://localhost:27017',
+			'db' => 'hitwicket'
+		),
 
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
