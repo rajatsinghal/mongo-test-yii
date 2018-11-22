@@ -1,5 +1,5 @@
 <?php
-class EventLogController {
+class EventLogController extends Controller {
 
 	public function actionIndex() {
 		if(isset($_POST['EventLog'])) {
