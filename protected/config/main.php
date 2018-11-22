@@ -57,7 +57,7 @@ return array(
 
 		'mongodb' => array(
 			'class' => 'EMongoClient',
-			'server' => 'mongodb://localhost:27017',
+			'server' => 'mongodb://localhost:27017/event_logs',
 			'db' => 'hitwicket'
 		),
 
